@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import styles from "../css/styles";
+import styles from "../../css/styles";
 
 const Library = () => {
   return (

@@ -10,6 +10,14 @@ const styles = StyleSheet.create({
   text: {
     color: "#fff",
   },
+  navbar: {
+    padding: 15,
+    backgroundColor: "#131313",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    gap: 5,
+  },
 });
 
 export default styles;
