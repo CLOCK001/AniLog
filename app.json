@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "anilog",
     "name": "anilog",
     "slug": "anilog",
     "version": "1.0.0",
