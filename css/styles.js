@@ -2,21 +2,23 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "#202020",
-    alignItems: "center",
-    justifyContent: "center",
+    flex: 1,
   },
   text: {
     color: "#fff",
   },
-  navbar: {
-    padding: 15,
-    backgroundColor: "#131313",
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-around",
-    gap: 5,
+  input: {
+    height: 40,
+    borderWidth: 2,
+    marginBottom: 12,
+    borderRadius: 5,
+    borderColor: "#fff",
+    padding: 10,
+    color: "#fff",
+  },
+  space: {
+    margin: 10,
   },
 });
 
