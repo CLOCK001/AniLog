@@ -1,6 +1,8 @@
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Text } from "react-native";
 import { useState } from "react";
 import SearchInput from "../componets/searchInput";
+import ListItems from "../componets/listitems";
 import styles from "../../css/styles";
 
 const Home = () => {
@@ -31,6 +33,7 @@ const Home = () => {
         value={search}
         clickFunction={handleCick}
       />
+      {results ? <ListItems animes={results.data} /> : <Text>no fuck you</Text>}
     </SafeAreaView>
   );
 };
