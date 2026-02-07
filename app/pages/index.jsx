@@ -16,6 +16,7 @@ const Home = () => {
     setResults(null);
     if (search == "") {
       alert("nothing found");
+      setIsLoading(false);
       return;
     }
     api = `https://api.jikan.moe/v4/anime?q=${search}&page=1`;
@@ -37,6 +38,7 @@ const Home = () => {
         setFuction={setSearch}
         value={search}
         clickFunction={handleCick}
+        loading={isLoading}
       />
       {results ? (
         <ListItems animes={results.data} />

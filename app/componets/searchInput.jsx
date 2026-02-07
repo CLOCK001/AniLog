@@ -1,7 +1,7 @@
 import { TextInput, View, Button } from "react-native";
 import styles from "../../css/styles";
 
-const SearchInput = ({ setFuction, value, clickFunction }) => {
+const SearchInput = ({ setFuction, value, clickFunction, loading }) => {
   return (
     <View style={styles.space}>
       <TextInput
@@ -10,7 +10,9 @@ const SearchInput = ({ setFuction, value, clickFunction }) => {
         onChangeText={setFuction}
         value={value}
       />
-      <Button title="find" color="#A30000" onPress={clickFunction} />
+      <View style={loading ? { display: "none" } : { display: "contents" }}>
+        <Button title="find" color="#A30000" onPress={clickFunction} />
+      </View>
     </View>
   );
 };
